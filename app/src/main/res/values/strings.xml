@@ -1,6 +1,13 @@
 <resources>
+
+<!--    StartScreen-->
     <string name="app_name">WhacAMoleTest</string>
     <string name="game_rules_text">
-        У тебя есть 30 секунд, накажи как можно больше кротов.Удачи!
+        You have 30 seconds, punish as many moles as possible. Good luck!
     </string>
+    <string name="game_rules_head">Game rules:</string>
+    <string name="your_record">Your record:</string>
+<!--    MainScreen-->
+    <string name="btn_to_menu_text">Menu</string>
+    <string name="btn_tryagain_text">New Game</string>
 </resources>

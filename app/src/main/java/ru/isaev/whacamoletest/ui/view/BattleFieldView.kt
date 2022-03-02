@@ -11,10 +11,10 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import ru.isaev.whacamoletest.ui.screen.MainScreen.MainViewModel
+import ru.isaev.whacamoletest.ui.screen.MainViewModel
 
 @Composable
-fun BoxScope.BattleField(viewModel: MainViewModel ) {
+fun BoxScope.BattleField(viewModel: MainViewModel) {
 
     //FirstRow
     Row(modifier = Modifier.fillMaxWidth().align(Alignment.TopCenter).height(150.dp)) {
