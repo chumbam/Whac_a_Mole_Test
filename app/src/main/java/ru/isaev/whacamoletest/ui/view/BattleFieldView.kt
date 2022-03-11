@@ -20,37 +20,37 @@ fun BoxScope.BattleField(viewModel: MainViewModel) {
     Row(modifier = Modifier.fillMaxWidth().align(Alignment.TopCenter).height(150.dp)) {
         CustomBox(
             viewModel = viewModel,
-            moleNumStatus = viewModel.moleout1.value)
+            moleNumStatus = viewModel.state.moleout1.value)
         CustomBox(
             viewModel = viewModel,
-            moleNumStatus = viewModel.moleout2.value)
+            moleNumStatus = viewModel.state.moleout2.value)
         CustomBox(
             viewModel = viewModel,
-            moleNumStatus = viewModel.moleout3.value)
+            moleNumStatus = viewModel.state.moleout3.value)
     }
     //SecondRow
     Row(modifier = Modifier.fillMaxWidth().align(Alignment.Center).height(150.dp)) {
         CustomBox(
             viewModel = viewModel,
-            moleNumStatus = viewModel.moleout4.value)
+            moleNumStatus = viewModel.state.moleout4.value)
         CustomBox(
             viewModel = viewModel,
-            moleNumStatus = viewModel.moleout5.value)
+            moleNumStatus = viewModel.state.moleout5.value)
         CustomBox(
             viewModel = viewModel,
-            moleNumStatus = viewModel.moleout6.value)
+            moleNumStatus = viewModel.state.moleout6.value)
     }
     //ThirdRow
     Row(modifier = Modifier.fillMaxWidth().align(Alignment.BottomCenter).height(150.dp)) {
         CustomBox(
             viewModel = viewModel,
-            moleNumStatus = viewModel.moleout7.value)
+            moleNumStatus = viewModel.state.moleout7.value)
         CustomBox(
             viewModel = viewModel,
-            moleNumStatus = viewModel.moleout8.value)
+            moleNumStatus = viewModel.state.moleout8.value)
         CustomBox(
             viewModel = viewModel,
-            moleNumStatus = viewModel.moleout9.value)
+            moleNumStatus = viewModel.state.moleout9.value)
     }
 }
 

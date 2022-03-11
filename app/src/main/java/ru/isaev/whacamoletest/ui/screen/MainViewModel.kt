@@ -14,39 +14,17 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import ru.isaev.whacamoletest.navigation.GameScreenItem
 import ru.isaev.whacamoletest.R
+import ru.isaev.whacamoletest.heplers.ViewState
 import ru.isaev.whacamoletest.showMessage
 import javax.inject.Inject
 import kotlin.random.Random
 
+
+
 @HiltViewModel
 class MainViewModel @Inject constructor(@ApplicationContext context: Context) : ViewModel() {
 
-    var _moleout1 = mutableStateOf(false)
-    var moleout1: State<Boolean> = _moleout1
-
-    var _moleout2 = mutableStateOf(false)
-    val moleout2: State<Boolean> = _moleout2
-
-    var _moleout3 = mutableStateOf(false)
-    val moleout3: State<Boolean> = _moleout3
-
-    var _moleout4 = mutableStateOf(false)
-    val moleout4: State<Boolean> = _moleout4
-
-    var _moleout5 = mutableStateOf(false)
-    val moleout5: State<Boolean> = _moleout5
-
-    var _moleout6 = mutableStateOf(false)
-    val moleout6: State<Boolean> = _moleout6
-
-    var _moleout7 = mutableStateOf(false)
-    val moleout7: State<Boolean> = _moleout1
-
-    var _moleout8 = mutableStateOf(false)
-    val moleout8: State<Boolean> = _moleout8
-
-    var _moleout9 = mutableStateOf(false)
-    val moleout9: State<Boolean> = _moleout9
+    val state = ViewState
 
     var _timer = mutableStateOf(30)
     val timer: State<Int> = _timer
@@ -57,20 +35,13 @@ class MainViewModel @Inject constructor(@ApplicationContext context: Context) : 
     var record = 0
 
     val moleout = R.drawable.molehole
-    val molein = R.drawable.holemust
+    val molein = R.drawable.hole
 
     val list = mutableListOf(
-        _moleout1,
-        _moleout2,
-        _moleout3,
-        _moleout4,
-        _moleout5,
-        _moleout6,
-        _moleout7,
-        _moleout8,
-        _moleout9
+        state._moleout1, state._moleout2, state._moleout3,
+        state._moleout4, state._moleout5, state._moleout6,
+        state._moleout7, state._moleout8, state._moleout9
     )
-
 
     fun startGame(navController: NavHostController) {
         val timer = object : CountDownTimer(30000, 1000) {

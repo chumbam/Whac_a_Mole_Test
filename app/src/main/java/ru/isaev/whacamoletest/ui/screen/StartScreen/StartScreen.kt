@@ -104,20 +104,5 @@ fun StartScreen(viewModel: MainViewModel, navController: NavHostController) {
     }
 }
 
-//            }
-//            Button(onClick = {
-//                navController.navigate(GameScreenItem.MainScreen.route) {
-//                    viewModel.startGameTimer(context, navController)
-//                }
-//
-//            }, modifier = Modifier.padding(bottom = 8.dp).size(height = 80.dp, width = 120.dp)) {
-//                Image(
-//                    painterResource(R.drawable.button),
-//                    contentScale = ContentScale.FillBounds,
-//                    contentDescription = ""
-//                )
-//            }
-
-//        }
 
 
